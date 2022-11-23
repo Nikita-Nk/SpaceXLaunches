@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18E039DA292E70F000753303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E039D9292E70F000753303 /* AppDelegate.swift */; };
-		18E039DC292E70F000753303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E039DB292E70F000753303 /* SceneDelegate.swift */; };
 		18E039DE292E70F000753303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E039DD292E70F000753303 /* ViewController.swift */; };
-		18E039E1292E70F000753303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E039DF292E70F000753303 /* Main.storyboard */; };
 		18E039E3292E70F300753303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E039E2292E70F300753303 /* Assets.xcassets */; };
 		18E039E6292E70F300753303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E039E4292E70F300753303 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		18E039D6292E70F000753303 /* SpaceXLaunches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E039D9292E70F000753303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18E039DB292E70F000753303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18E039DD292E70F000753303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18E039E0292E70F000753303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E039E2292E70F300753303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E039E5292E70F300753303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E039E7292E70F300753303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,21 @@
 		18E039D8292E70F000753303 /* SpaceXLaunches */ = {
 			isa = PBXGroup;
 			children = (
-				18E039D9292E70F000753303 /* AppDelegate.swift */,
-				18E039DB292E70F000753303 /* SceneDelegate.swift */,
+				18E039ED292E763E00753303 /* Application */,
 				18E039DD292E70F000753303 /* ViewController.swift */,
-				18E039DF292E70F000753303 /* Main.storyboard */,
+			);
+			path = SpaceXLaunches;
+			sourceTree = "<group>";
+		};
+		18E039ED292E763E00753303 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18E039D9292E70F000753303 /* AppDelegate.swift */,
 				18E039E2292E70F300753303 /* Assets.xcassets */,
 				18E039E4292E70F300753303 /* LaunchScreen.storyboard */,
 				18E039E7292E70F300753303 /* Info.plist */,
 			);
-			path = SpaceXLaunches;
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +129,6 @@
 			files = (
 				18E039E6292E70F300753303 /* LaunchScreen.storyboard in Resources */,
 				18E039E3292E70F300753303 /* Assets.xcassets in Resources */,
-				18E039E1292E70F000753303 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +141,12 @@
 			files = (
 				18E039DE292E70F000753303 /* ViewController.swift in Sources */,
 				18E039DA292E70F000753303 /* AppDelegate.swift in Sources */,
-				18E039DC292E70F000753303 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18E039DF292E70F000753303 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18E039E0292E70F000753303 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18E039E4292E70F300753303 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +281,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6U223Z5G92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceXLaunches/Info.plist;
+				INFOPLIST_FILE = SpaceXLaunches/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +308,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6U223Z5G92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceXLaunches/Info.plist;
+				INFOPLIST_FILE = SpaceXLaunches/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
